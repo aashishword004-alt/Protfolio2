@@ -244,24 +244,16 @@ p {
   }
 }
 
-/* Table responsiveness */
+ /* =============================
+   Mobile Table Fix
+============================= */
 @media (max-width: 768px) {
   .table-card {
-    padding: 15px;
+    overflow-x: auto;
   }
 
-  /* Hide less important columns */
-  .table th:nth-child(3),
-  .table td:nth-child(3),
-  .table th:nth-child(4),
-  .table td:nth-child(4) {
-    display: none;
-  }
-
-  /* Make action buttons smaller */
-  .table .btn {
-    padding: 3px 6px;
-    font-size: 0.8rem;
+  table {
+    min-width: 700px;
   }
 }
 
